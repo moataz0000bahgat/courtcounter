@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.courtcounter.MainActivity"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.courtcounter.MainActivity"
+        android:orientation="vertical"
+        android:layout_weight="1"
+
+        >
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:layout_gravity="center_horizontal"
+        android:padding="4dp"
+            android:textSize="30sp"
+
+            />
+         <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:id="@+id/team_a_score"
+             android:textSize="90sp"
+
+        />
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="+3 buttons"
+        android:onClick="addThreeForTeamA"
+            android:background="@color/colorAccent"
+            />
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="+2 buttons"
+        android:onClick="addTwoForTeamA"
+            android:background="@color/colorAccent"
+            />
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="free throw"
+        android:onClick="addOneForTeamA"
+            android:background="@color/colorAccent"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.courtcounter.MainActivity"
+    android:orientation="vertical"
+
+
+
+        >
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team B"
+        android:layout_gravity="center_horizontal"
+        android:padding="4dp"
+            android:textSize="30sp"
+
+            />
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+            android:id="@+id/team_b_score"
+            android:textSize="90sp"
+
+
+
+
+
+            />
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="+3 buttons"
+        android:onClick="addThreeForTeamB"
+            android:background="@color/colorAccent"
+            />
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="+2 buttons"
+        android:onClick="addTwoForTeamB"
+            android:background="@color/colorAccent"
+            />
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="free throw"
+        android:onClick="addOneForTeamB"
+            android:background="@color/colorAccent"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Reset"
+        android:layout_alignParentBottom="true"
+        android:onClick="Reset"
+        android:background="@color/colorAccent"
+        android:layout_margin="50dp"
+        />
+
+
+</RelativeLayout>
+
